@@ -69,7 +69,7 @@ Missing values and duplicate rows were intentionally introduced for data cleanin
 ![Pie Chart](sales_by_region.png)
 
 ### Monthly Trend
-![Monthly Sales](monthly_sales.png)
+![Monthly Sales](sales_over_time.png)
 
 ---
 
