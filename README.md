@@ -13,11 +13,11 @@ This project focuses on analyzing sales data using Python libraries such as NumP
 ---
 
 ## Dataset
-The dataset contains:
-- Date  
-- Product Name  
-- Sales  
-- Region  
+This project uses a publicly available sales dataset from Kaggle.
+
+🔗 Kaggle Dataset: https://www.kaggle.com/datasets/vinothkannaece/sales-dataset
+
+The dataset includes key fields such as date, product details, sales values, and region. Additional preprocessing steps were performed, including the introduction and handling of missing values and duplicate records to simulate real-world data scenarios.
 
 Missing values and duplicate rows were intentionally introduced for data cleaning practice.
 
