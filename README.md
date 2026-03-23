@@ -129,7 +129,6 @@ Sales-Data-Analysis/
    ```bash
    pip install numpy pandas matplotlib scikit-learn
 4. Open the Jupyter Notebook:
-   3. Install required libraries:
    ```bash
    jupyter notebook
 5. Run all cells in Sales_Analysis.ipynb
