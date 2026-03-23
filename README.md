@@ -1,14 +1,15 @@
-# Sales Data Analysis using Python
+# Sales Data Analysis & Prediction using Python
 
 ## Project Overview
-This project focuses on analyzing sales data using Python libraries such as NumPy, Pandas, and Matplotlib. It includes data cleaning, analysis, and visualization to extract meaningful insights.
+This project focuses on performing end-to-end sales data analysis and basic predictive modeling using Python. It includes data preprocessing, exploratory data analysis (EDA), visualization, and a machine learning model to classify sales performance.
 
 ---
 
 ## Objective
 - Perform numerical analysis using NumPy  
-- Handle and clean data using Pandas  
-- Visualize data using Matplotlib  
+- Clean and preprocess data using Pandas  
+- Visualize insights using Matplotlib  
+- Build a basic machine learning model for sales prediction
 
 ---
 
@@ -17,9 +18,17 @@ This project uses a publicly available sales dataset from Kaggle.
 
 🔗 Kaggle Dataset: https://www.kaggle.com/datasets/vinothkannaece/sales-dataset
 
-The dataset includes key fields such as date, product details, sales values, and region. Additional preprocessing steps were performed, including the introduction and handling of missing values and duplicate records to simulate real-world data scenarios.
+The dataset contains:
+- Order Date  
+- Product Name  
+- Sales  
+- Region  
+- Category and Sub-category  
 
-Missing values and duplicate rows were intentionally introduced for data cleaning practice.
+**Data Enhancement**  
+To simulate real-world scenarios:
+- Missing values were intentionally introduced and handled  
+- Duplicate records were created and removed  
 
 ---
 
@@ -27,7 +36,8 @@ Missing values and duplicate rows were intentionally introduced for data cleanin
 - Python  
 - NumPy  
 - Pandas  
-- Matplotlib  
+- Matplotlib
+- Scikit-learn  
 - Jupyter Notebook  
 
 ---
@@ -35,32 +45,49 @@ Missing values and duplicate rows were intentionally introduced for data cleanin
 ## Key Features
 
 ### Data Cleaning
-- Handled missing values  
+- Handled missing values using mean and placeholders  
 - Removed duplicate rows  
-- Converted date format  
+- Converted date columns to datetime format  
 
 ### Data Analysis
-- Total sales calculation  
-- Sales by product and region  
-- Best-selling product identification  
-- Monthly sales trend analysis  
+- Computed total sales  
+- Analyzed sales by product and region  
+- Identified best-selling product  
+- Detected lowest-performing region  
+- Calculated average sales per product 
 
 ### Visualization
-- Bar Chart (Top Products)  
-- Pie Chart (Sales by Region)  
+- Bar Chart (Top 10 Products by Sales)  
+- Pie Chart (Sales Distribution by Region)  
 - Line Chart (Sales Over Time)  
-- Combined Subplots  
+- Subplots (Combined multiple charts)  
 
 ---
 
 ## Time-Based Analysis
-- Extracted month and day  
+- Extracted month and day from date  
 - Calculated monthly sales  
-- Identified highest sales month  
+- Identified peak sales month  
+- Plotted monthly sales trend  
+
+---
+##  Machine Learning (Bonus Enhancement)
+
+### Model: Logistic Regression
+- Created a binary target: High Sales vs Low Sales  
+- Performed feature encoding using one-hot encoding  
+- Split dataset into training and testing sets  
+- Trained model using Logistic Regression  
+
+### 📊 Model Performance
+- Accuracy: **~84%**  
+- Evaluated using:
+  - Confusion Matrix  
+  - Classification Report  
 
 ---
 
-## 📷 Sample Outputs
+##  Sample Outputs
 
 ### Bar Chart
 ![Bar Chart](sales_by_product.png)
@@ -94,18 +121,23 @@ Sales-Data-Analysis/
 ├── README.md
 
 ---
+## ▶️ How to Run the Project
 
-## How to Run
-
-1. Download the project as ZIP from GitHub  
-2. Extract the files  
-3. Open the notebook file (Sales_Analysis.ipynb) in Jupyter Notebook or Google Colab  
-4. Run all cells step by step
+1. Clone or download the repository  
+2. Open the project folder  
+3. Install required libraries:
+   ```bash
+   pip install numpy pandas matplotlib scikit-learn
+4. Open the Jupyter Notebook:
+   3. Install required libraries:
+   ```bash
+   jupyter notebook
+5. Run all cells in Sales_Analysis.ipynb
 
 ---
 
 ## Conclusion
-This project demonstrates how Python can be used for data cleaning, analysis, and visualization to gain insights from sales data.
+This project demonstrates how raw sales data can be transformed into meaningful insights through data cleaning, analysis, and visualization. The addition of a machine learning model enhances the project by introducing predictive capabilities, making it closer to real-world data science applications.
 
 ---
 
